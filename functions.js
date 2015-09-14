@@ -81,4 +81,29 @@ var squr2=clients.map(function(client){
 squr2       // [1, 9, 100, 64]
 
 
-// (5) 
+// (5) Create a function called operationMaker that takes only a string called operation as argument.
+// This string could be “add”, “subtract”, “mult” or “div”.
+// Your function will return a function that will take two numbers and return the result of running operation on these numbers.
+
+function operationMaker(operation){
+    switch (operation) {
+        case 'add':
+            return function addNumbers(num1, num2){
+                return num1+num2
+            }
+        case 'subtract':
+            return function subtractNumbers(num1, num2){
+                return num1-num2
+            }    
+        case 'mult':
+            return function multNumbers(num1, num2){
+                return num1*num2
+            }
+        case 'div':
+            return function divNumbers(num1, num2){
+                return num1/num2
+            }    
+    }
+   
+}
+
