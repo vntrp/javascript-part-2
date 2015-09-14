@@ -50,3 +50,17 @@ Array.prototype.sortBy = function(param) {
 
 customers.sortBy('email');
 
+
+// (3) Create a function that can be used with Array.prototype.map. This function should take a number and return its square.
+// Then, use this function with map on an array of numbers to check the result.
+
+var numbrs =[1,2,4,5,6,7,8,9,23,67,89]
+
+var squr=numbrs.map(function(x){
+    return Math.pow(x,2);
+})
+
+squr   // [1, 4, 16, 25, 36, 49, 64, 81, 529, 4489, 7921]
+
+
+
