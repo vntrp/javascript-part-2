@@ -63,4 +63,22 @@ var squr=numbrs.map(function(x){
 squr   // [1, 4, 16, 25, 36, 49, 64, 81, 529, 4489, 7921]
 
 
+// (4) Create a function that can be used with Array.prototype.map. This function should be able to take an object and square its “num” property.
+// Then, use this function with map on an array of objects each containing a “num” property.
 
+
+var clients=[
+    {name: "dan", num: 1},
+    {name: "bill", num: 3},
+    {name: "yan", num: 10},
+    {name: "fatma", num: 8}
+]
+    
+var squr2=clients.map(function(client){
+    return Math.pow(client.num,2);
+})
+
+squr2       // [1, 9, 100, 64]
+
+
+// (5) 
